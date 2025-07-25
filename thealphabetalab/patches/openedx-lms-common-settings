@@ -1,0 +1,5 @@
+# -----------------------------------------------------------------------------
+# tutor plugin thealphabetalab
+# -----------------------------------------------------------------------------
+THIRD_PARTY_AUTH_BACKENDS = ["social_core.backends.google.GoogleOAuth2","social_core.backends.facebook.FacebookOAuth2"]
+SEARCH_SKIP_SHOW_IN_CATALOG_FILTERING = False

@@ -1,0 +1,9 @@
+# -----------------------------------------------------------------------------
+# tutor plugin thealphabetalab
+# -----------------------------------------------------------------------------
+MIDDLEWARE.remove('django.middleware.clickjacking.XFrameOptionsMiddleware')
+MIDDLEWARE.insert(10,'thealphabetalab_services.middleware.CommonMiddleware')
+ALLOWED_HOSTS.append("thealphabetalab.com")
+CSRF_TRUSTED_ORIGINS.append("https://thealphabetalab.com") #Replace with wordpress root
+CORS_ORIGIN_WHITELIST.append("https://thealphabetalab.com") #Replace with wordpress root
+X_FRAME_OPTIONS = 'ALLOW'
